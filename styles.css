@@ -1,7 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 24px;
+    font-family: sans-serif;
+    color: #222222;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+label, input{
+    display: block;
+}
 .passwordAtributes{
     font-size: 0.7rem;
 }
 label{
-    font-size: 0.8rem;
-    display: block;
+    font-size: 0.9rem;
 }
