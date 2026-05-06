@@ -1,3 +1,7 @@
-*{
-    background-color: aquamarine;
+.passwordAtributes{
+    font-size: 0.7rem;
+}
+label{
+    font-size: 0.8rem;
+    display: block;
 }
