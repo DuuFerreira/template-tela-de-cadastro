@@ -8,63 +8,67 @@
     <title>Template tela de Cadastro</title>
 </head>
 <body>
-    <h1>Cadastro</h1>
-    <form action="" method="post">
-        <label for="name">Nome</label>
-        <input type="text" name="name" id="name" required placeholder="Seu nome">
+    <div id="registration-session">
+         <h1>Template de tela de Cadastro</h1>
+        <form action="" method="post">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required placeholder="Seu nome">
 
-        <label for="lastName">Sobrenome</label>
-        <input type="text" name="lastName" id="lastName" required placeholder="Seu sobrenome">
+            <label for="lastName">Sobrenome</label>
+            <input type="text" name="lastName" id="lastName" required placeholder="Seu sobrenome">
 
-        <label for="phoneNumber">Telefone</label>
-        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Seu telefone">
+            <label for="phoneNumber">Telefone</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Seu telefone">
 
-        <label for="birthDate">Data de Nascimento</label>
-        <input type="text" name="birthDate" id="birthDate" placeholder="Sua data de nascimento aqui">
-        
-        <label for="CPF">CPF</label>
-        <input type="text" name="CPF" id="CPF" required placeholder="Seu CPF aqui" onkeyup="validarCPF()">
-        <label id="checkCPF"></label>
-        
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required placeholder="Seu email" onkeyup="validarEmail()">
-        
-        <label for="validateEmail">Confirme o email</label>
-        <input type="email" name="validateEmail" id="validateEmail" required placeholder="Confirme o email" onkeyup="validarCEmail()">
-        <label id="checkEmailMessage"></label>
+            <label for="birthDate">Data de Nascimento</label>
+            <input type="text" name="birthDate" id="birthDate" placeholder="Sua data de nascimento aqui">
+            
+            <label for="CPF">CPF</label>
+            <input type="text" name="CPF" id="CPF" required placeholder="Seu CPF aqui" onkeyup="validarCPF()">
+            <label id="checkCPF"></label>
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="Seu email" onkeyup="validarEmail()">
+            
+            <label for="validateEmail">Confirme o email</label>
+            <input type="email" name="validateEmail" id="validateEmail" required placeholder="Confirme o email" onkeyup="validarCEmail()">
+            <label id="checkEmailMessage"></label>
 
-        <label for="password">Senha</label>
-        <input type="password" id="password" placeholder="Insira a senha" onkeyup="validatePassword()">
-        <label id="label8characters" class="passwordAtributes">*Pelo menos 8 caracteres</label>
-        <label id="label1MajorLetter" class="passwordAtributes">*Pelo menos 1 letra maiúscula</label>
-        <label id="label1Number" class="passwordAtributes">*Pelo menos 1 número</label>
-        <label id="label1Special" class="passwordAtributes">*Pelo menos 1 caracter especial (*&%$@#...)</label>
+            <label for="password">Senha</label>
+            <input type="password" id="password" placeholder="Insira a senha" onkeyup="validatePassword()">
+            <label id="label8characters" class="passwordAtributes">*Pelo menos 8 caracteres</label>
+            <label id="label1MajorLetter" class="passwordAtributes">*Pelo menos 1 letra maiúscula</label>
+            <label id="label1Number" class="passwordAtributes">*Pelo menos 1 número</label>
+            <label id="label1Special" class="passwordAtributes">*Pelo menos 1 caracter especial (*&%$@#...)</label>
 
-        <label for="confirmPassword">Confirme a senha</label>
-        <input type="password" id="confirmPassword" placeholder="Confirme a senha" onkeyup="checkPassword()">
-        <label id="cPMessage"></label>
-        
-        <label for="CEP">CEP</label>
-        <input type="text" name="CEP" id="CEP" required placeholder="Seu CEP aqui" >
-        <input type="button" value="Buscar" onclick="consultaCEP()">
+            <label for="confirmPassword">Confirme a senha</label>
+            <input type="password" id="confirmPassword" placeholder="Confirme a senha" onkeyup="checkPassword()">
+            <label id="cPMessage"></label>
+            
+            <label for="CEP">CEP</label>
+            <input type="text" name="CEP" id="CEP" required placeholder="Seu CEP aqui" >
+            <input type="button" value="Buscar" onclick="consultaCEP()">
 
-        <label for="street">Rua</label>
-        <input type="text" name="street" id="street">
-        <label for="houseNumber">Número:</label>
-        <input type="number" name="houseNumber" id="houseNumber" required>
-        <label for="complement">Complemento:</label>
-        <input type="text" id="complement">
+            <label for="street">Rua</label>
+            <input type="text" name="street" id="street">
+            <label for="houseNumber">Número:</label>
+            <input type="number" name="houseNumber" id="houseNumber" required>
+            <label for="complement">Complemento:</label>
+            <input type="text" id="complement">
 
-        <label for="neighborhood">Bairro</label>
-        <input type="text" id="neighborhood">
-        <label for="city">Cidade</label>
-        <input type="text" id="city">
-        <label for="UF">UF</label>
-        <input type="text" id="UF">
-        <br>
+            <label for="neighborhood">Bairro</label>
+            <input type="text" id="neighborhood">
+            <label for="city">Cidade</label>
+            <input type="text" id="city">
+            <label for="UF">UF</label>
+            <input type="text" id="UF">
+            <br>
 
-        <button type="submit">Cadastrar</button>
-    </form>
+            <button type="submit">Cadastrar</button>
+        </form>
+
+    </div>
+   
 
 
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>

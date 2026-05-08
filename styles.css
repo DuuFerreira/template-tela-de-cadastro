@@ -1,27 +1,370 @@
-*{
+/* =========================================================
+   RESET GERAL
+   Remove estilos padrões do navegador
+========================================================= */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    padding: 24px;
-    font-family: sans-serif;
-    color: #222222;
-}
 
-form{
+/* =========================================================
+   BODY
+   Fundo moderno estilo fintech
+========================================================= */
+
+body {
+
+    /* Fonte moderna */
+    font-family: 'Inter', sans-serif;
+
+    /* Fundo escuro elegante */
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+
+    /* Altura mínima da tela */
+    min-height: 100vh;
+
+    /* Centraliza conteúdo */
     display: flex;
-    flex-direction: column;
-    gap: 5px;
 
+    justify-content: center;
+    align-items: center;
+
+    /* Espaçamento */
+    padding: 40px;
+
+    /* Cor padrão do texto */
+    color: white;
 }
-label, input{
-    display: block;
+
+
+/* =========================================================
+   CARD PRINCIPAL
+========================================================= */
+
+#registration-session {
+
+    /* Fundo translúcido moderno */
+    background: rgba(255, 255, 255, 0.08);
+
+    /* Efeito glassmorphism */
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    /* Borda suave */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    /* Largura */
+    width: 100%;
+    max-width: 720px;
+
+    /* Espaçamento interno */
+    padding: 45px;
+
+    /* Bordas arredondadas */
+    border-radius: 24px;
+
+    /* Sombra moderna */
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.35);
+
+    /* Suavidade */
+    transition: 0.3s ease;
 }
-.passwordAtributes{
-    font-size: 0.7rem;
+
+
+/* Efeito hover elegante */
+#registration-session:hover {
+
+    transform: translateY(-4px);
 }
-label{
+
+
+/* =========================================================
+   TÍTULO
+========================================================= */
+
+h1 {
+
+    /* Centraliza */
+    text-align: center;
+
+    /* Espaçamento */
+    margin-bottom: 35px;
+
+    /* Tamanho */
+    font-size: 2.2rem;
+
+    /* Peso */
+    font-weight: 700;
+
+    /* Cor branca */
+    color: #ffffff;
+
+    /* Espaçamento entre letras */
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   FORMULÁRIO
+========================================================= */
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   LABELS
+========================================================= */
+
+label {
+
+    /* Cor suave */
+    color: #cbd5e1;
+
+    /* Peso */
+    font-weight: 500;
+
+    /* Tamanho */
+    font-size: 0.95rem;
+
+    /* Espaço superior */
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+input {
+
+    /* Espaçamento interno */
+    padding: 16px;
+
+    /* Fundo moderno */
+    background: rgba(255, 255, 255, 0.05);
+
+    /* Borda transparente */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    /* Cor do texto */
+    color: white;
+
+    /* Bordas arredondadas */
+    border-radius: 14px;
+
+    /* Fonte */
+    font-size: 1rem;
+
+    /* Suavidade */
+    transition: all 0.3s ease;
+}
+
+
+/* Placeholder */
+input::placeholder {
+
+    color: #94a3b8;
+}
+
+
+/* Focus moderno */
+input:focus {
+
+    outline: none;
+
+    /* Borda azul neon */
+    border-color: #38bdf8;
+
+    /* Glow fintech */
+    box-shadow:
+        0 0 0 4px rgba(56, 189, 248, 0.15);
+
+    /* Fundo um pouco mais claro */
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   BOTÃO BUSCAR CEP
+========================================================= */
+
+input[type="button"] {
+
+    background: linear-gradient(135deg, #06b6d4, #3b82f6);
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    border: none;
+
+    margin-top: 10px;
+}
+
+
+/* Hover botão CEP */
+input[type="button"]:hover {
+
+    transform: translateY(-2px);
+
+    opacity: 0.95;
+}
+
+
+/* =========================================================
+   BOTÃO CADASTRAR
+========================================================= */
+
+button {
+
+    /* Fundo gradiente fintech */
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+
+    /* Remove borda */
+    border: none;
+
+    /* Cor texto */
+    color: white;
+
+    /* Espaçamento */
+    padding: 18px;
+
+    /* Fonte */
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    /* Bordas arredondadas */
+    border-radius: 16px;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Espaço superior */
+    margin-top: 25px;
+
+    /* Efeito suave */
+    transition: all 0.3s ease;
+}
+
+
+/* Hover botão cadastrar */
+button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(59, 130, 246, 0.35);
+}
+
+
+/* Clique botão */
+button:active {
+
+    transform: scale(0.98);
+}
+
+
+/* =========================================================
+   MENSAGENS DE SENHA
+========================================================= */
+
+.passwordAtributes {
+
+    /* Texto pequeno */
+    font-size: 0.82rem;
+
+    /* Cor suave */
+    color: #94a3b8;
+
+    /* Espaço pequeno */
+    margin-top: -4px;
+}
+
+
+/* =========================================================
+   MENSAGENS DE VALIDAÇÃO
+========================================================= */
+
+#checkCPF,
+#checkEmailMessage,
+#cPMessage {
+
+    /* Tamanho */
     font-size: 0.9rem;
+
+    /* Peso */
+    font-weight: 600;
+
+    /* Espaço */
+    margin-top: -5px;
+}
+
+
+/* =========================================================
+   SCROLLBAR MODERNA
+========================================================= */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #3b82f6;
+
+    border-radius: 20px;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    body {
+
+        padding: 20px;
+    }
+
+    #registration-session {
+
+        padding: 30px;
+    }
+
+    h1 {
+
+        font-size: 1.7rem;
+    }
+
+    input {
+
+        padding: 14px;
+    }
+
+    button {
+
+        padding: 16px;
+    }
 }
