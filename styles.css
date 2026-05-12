@@ -1,26 +1,15 @@
-/* =========================================================
-   RESET GERAL
-   Remove estilos padrões do navegador
-========================================================= */
-
+/*RESET GERAL*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-/* =========================================================
-   BODY
-   Fundo moderno estilo fintech
-========================================================= */
-
 body {
-
-    /* Fonte moderna */
+    /* Fonte Inter sem serifa */
     font-family: 'Inter', sans-serif;
 
-    /* Fundo escuro elegante */
+    /* Cor de fundo: O linear-gradient faz uma espécie de degradê entre 2 cores */
     background: linear-gradient(135deg, #0f172a, #1e293b);
 
     /* Altura mínima da tela */
@@ -36,13 +25,9 @@ body {
     padding: 40px;
 
     /* Cor padrão do texto */
-    color: white;
+    color: #FFFFFF;
 }
 
-
-/* =========================================================
-   CARD PRINCIPAL
-========================================================= */
 
 #registration-session {
 
