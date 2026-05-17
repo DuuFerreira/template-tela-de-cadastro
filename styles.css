@@ -7,7 +7,7 @@
 
 body{
     font-family: 'Inter', sans-serif;
-    background-image: url(/img/background-image.jpg);
+    background-image: url(img/background-image.jpg);
     min-height: 100vh;     /* Altura mínima da tela */
     display: flex;     /* Centraliza conteúdo */
     justify-content: center;     /*Justify content serve para alinhar e distribuir o espaço entre os elementos*/
